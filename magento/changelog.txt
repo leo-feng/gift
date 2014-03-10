@@ -1,0 +1,33 @@
+11 April 2012
+-------------
+v1.0 release
+
+
+
+17 May 2012
+-----------
+v1.1 release
+
+Css fixes
+Layout fixes
+Add Currency Switch in header
+Add Additional tab on Product Page
+fixed php notice in Navigation.php
+Add Footer links static block
+Fix ssl bug
+Fixed Wishlist page 
+Fixed Product Page layout
+Separate Slideshow for different stores. Sort Order for slides
+Added previous/next functionality for the product view page. Now you can navigate to next and previous products without going back to listing page.
+You can now add home page button in the main navigation menu.
+Added “Sign Up” link in the Top Links block. It will help new customers to find the registration form.
+Now you have possibility to display your custom link in the top Links block. You can set the path, anchor and title text.
+Added Product labels (“new” and “sale”) on product page, in categories and on other product listings (editable from admin panel).
+
+
+
+02 December 2013
+-----------
+v1.2 release
+
+add magento 1.8 patch

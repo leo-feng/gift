@@ -1,0 +1,86 @@
+<?php
+$config = Mage::getStoreConfig('slideshow/slideshow_config');
+if($config['enabled']) { ?>
+<!-- SLIDESHOW BOF -->
+<div class="slideshow">
+	<ul id="slideshow">
+    <?php
+    $slides = $this->getSlides();
+    foreach($slides as $s)
+    {
+	if ( empty($s['image']) ) continue;
+    ?>
+        <li>
+	        <?php if( $s['link'] ) { ?>
+	        <a href="<?php echo $s['link']?>" title="<?php echo $this->stripTags($s['title']); ?>">
+	        <?php } ?>
+	        <?php if( $s['title'] || $s['text'] || $s['button_text'] ) { ?>
+	        <div class="slide-content <?php echo $s['content_position']?>-content">
+                <?php if( $s['title'] ) { ?>
+                <strong><?php echo $s['title']?></strong>
+                <?php } ?>
+                <?php if( $s['text'] ) { ?>
+                <p><?php echo $s['text']?></p>
+                <?php } ?>
+                <?php if( $s['button_text'] ) { ?>
+                <p><span><?php echo $s['button_text']?></span></p>
+                <?php } ?>
+            </div>
+            <?php } ?>
+            <img src="<?php echo Mage::getBaseUrl('media') . $s['image'];?>" alt="<?php echo $this->stripTags($s['title']); ?>" />
+	        <?php if( $s['link'] ) { ?>
+            </a>
+            <?php } ?>
+        </li>
+    <?php
+    } // end foreach
+    ?>
+    </ul>
+	<a id="slideshow-prev" href="#"></a>
+	<a id="slideshow-next" href="#"></a>
+</div>
+<script>
+jQuery(window).load(function(){
+    var $ = jQuery;
+
+	var config = {
+		width: $('#slideshow').width(),
+		height: $('#slideshow').height(),
+		interval: <?php echo $config["interval"];?>,
+		speed: <?php echo $config["speed"];?>,
+		fadeSpeed: <?php echo $config["fade_speed"];?>,
+		effect: '<?php echo $config["effect"];?>'
+	};
+
+	$('#slideshow .slide-content, #slideshow-next, #slideshow-prev').css({opacity: 0}).show();
+
+    var animateSpeed = config.fadeSpeed;
+    $('#slideshow').cycle({
+	    prev: '#slideshow-prev',
+        next: '#slideshow-next',
+        timeout : config.interval,
+        speed: config.speed,
+        fx: config.effect,
+	    pause: 1,
+	    pauseOnPagerHover: 1,
+		before: function(currSlideElement, nextSlideElement){
+			$('.slide-content',currSlideElement).animate({opacity: 0}, animateSpeed);
+	    },
+	    after: function(currSlideElement, nextSlideElement){
+		    $('.slide-content',nextSlideElement).css('top', ($('#slideshow').height()-$('.slide-content',nextSlideElement).height())/2  );
+		    $('.slide-content',nextSlideElement).animate({opacity: 1}, animateSpeed);
+	    }
+    });
+
+	$("div.slideshow").hover(
+		function(){
+			$('#slideshow-next, #slideshow-prev').animate({opacity: 1}, animateSpeed);
+		},
+		function(){
+			$('#slideshow-next, #slideshow-prev').animate({opacity: 0}, animateSpeed);
+		}
+	);
+});
+</script>
+<!-- SLIDESHOW EOF -->
+<?php } ?>

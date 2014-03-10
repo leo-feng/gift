@@ -1,0 +1,236 @@
+<?php 
+/*****/
+$sliderConfig = MAGE::helper('ThemeOptions')->getThemeOptions('headerslider');
+/*****/
+
+$show = 0;
+if ($sliderConfig ['enabled']):
+
+  /**/
+  if ($sliderConfig['onlyhome']):
+    if (Mage::getSingleton('cms/page')->getIdentifier() == 'home'  && Mage::app()->getFrontController()->getRequest()->getRouteName() == 'cms'):
+      $show = 1;
+    endif;
+  else:
+    $show = 1;
+  endif; 
+  /**/
+
+if ($show): 
+$slidesList = explode(",", str_replace(" ", "", $sliderConfig ['slides']));
+?>
+<?php if($sliderConfig['slidertype'] == 1): ?>
+<div class="grid_8 alpha">
+<?php endif; ?>
+	<div class="header-slider-container<?php if($sliderConfig['slidertype'] == 1){echo ' header-slider-2';} ?>">
+		<div class="container">
+			<div class="iosSlider">
+				<div class="slider">
+					<?php
+						foreach ($slidesList as $slideID) {
+							$html = '';
+							$html .= '<div class="item" id="item_' . $slideID . '">';
+							$html .= $this->getLayout()->createBlock('cms/block')->setBlockId($slideID)->toHtml();
+							$html .= '</div>';
+							echo $html;
+						}
+					?>
+				</div>
+				<div class = 'next'><?php echo $this->__('Next') ?></div>
+				<div class = 'prev unselectable'><?php echo $this->__('Prev') ?></div>
+			</div>
+		</div>
+	</div>
+<?php if($sliderConfig['slidertype'] == 1): ?>
+</div>
+<div class="grid_4 omega">
+	<div class="header-banners">
+		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($sliderConfig['banners'])->toHtml() ?>
+	</div>
+</div>
+<?php endif; ?>
+<script type="text/javascript">
+  jQuery(window).load(function(){
+	/* slider_items_length = jQuery('.slider .item').size();
+	if(slider_items_length > 1){
+		var slider_bullets = '<ul class="slideSelectors">';
+		for(i=1; i<=slider_items_length; i++){
+			if(i==1){selected_item = ' selected'}else{selected_item = ''}
+			slider_bullets += '<li class="button-item' + selected_item + '" id="item' + i + '">' + i + '</li>'
+		}
+		slider_bullets += '</ul>';
+		jQuery('.header-slider-container .iosSlider .prev').after(slider_bullets);
+	} */
+	
+	
+	//Slider Container Ratio
+	var slider_container = jQuery('.header-slider-container .container');
+	var slider_img =  jQuery('.header-slider-container .iosSlider .slider .item img:first');
+	var ratio = Math.round((slider_img.height()/slider_img.width())*100);
+	slider_container.css('padding-bottom', ratio + '%');
+	
+  
+    jQuery('.iosSlider').iosSlider({
+      responsiveSlideWidth: true,
+      snapToChildren: true,
+      desktopClickDrag: true,
+      infiniteSlider: true,
+      /* navSlideSelector: '.slideSelectors .button-item', */
+      navNextSelector: '.iosSlider .next',
+      navPrevSelector: '.iosSlider .prev',
+      onSlideComplete: slideComplete,
+	  onSliderLoaded: sliderLoaded,
+	  onSlideChange: slideChange,
+      <?php if(isset($sliderConfig ['autoSlide'])): ?>autoSlide: <?php echo $sliderConfig ['autoSlide']; ?><?php endif; ?>
+      <?php if(isset($sliderConfig ['autoSlideTimer'])): ?>, autoSlideTimer: <?php echo $sliderConfig ['autoSlideTimer']; ?><?php endif; ?>
+	  <?php if(isset($sliderConfig ['autoSlideTransTimer'])): ?>, autoSlideTransTimer: <?php echo $sliderConfig ['autoSlideTransTimer']; endif; ?>
+	  <?php if(isset($sliderConfig ['desktopClickDrag'])): ?>, desktopClickDrag: <?php echo $sliderConfig ['desktopClickDrag']; endif; ?>
+	  <?php if(isset($sliderConfig ['infiniteSlider'])): ?>, infiniteSlider: <?php echo $sliderConfig ['infiniteSlider']; endif; ?>
+    });
+    
+	
+	function slideChange(args) {
+	
+		/* jQuery('.slideSelectors .button-item').removeClass('selected');
+		jQuery('.slideSelectors .button-item:eq(' + args.currentSlideNumber + ')').addClass('selected'); */
+		
+	}
+	
+	function slideComplete(args) {
+			anotherLayout = false;
+			
+			/* Slide Animation Presets */
+			if(jQuery('.header-slider-container.header-slider-2').length){ /* small slider */
+				if(args.currentSlideObject.attr('id') == 'item_header_slide_2'){anotherLayout = true;}
+			
+				slideTitle = '8%';
+				slideTitle_anotherLayout = '5%';
+				slideText = '8%';
+				slideText_anotherLayout = '5%';
+				slideButton = '8%';
+				slideButton_anotherLayout = '5%';
+				slideProductImg = '0';
+				slideProductImg_anotherLayout = '0';
+				slideSky = '0';
+				slideFooter = '0';
+				slideLabel = '43%';
+				/* label slides: 2,3 */
+				slideLabel_23 = '57%';
+			   
+			}else{ /* wide slider */
+				if(args.currentSlideObject.attr('id') == 'item_header_wide_slide_2'){anotherLayout = true;}
+			
+				slideTitle = '20%';
+				slideTitle_anotherLayout = '10%';
+				slideText = '20%';
+				slideText_anotherLayout = '10%';
+				slideButton = '20%';
+				slideButton_anotherLayout = '10%';
+				slideProductImg = '10%';
+				slideProductImg_anotherLayout = '10%';
+				slideSky = '0';
+				slideFooter = '3px';
+				slideLabel = '43%';
+				/* label slides: 2,3 */
+				slideLabel_23 = '57%';
+			}
+			
+			
+			/* animation */
+			  if(anotherLayout == false){
+				  jQuery(args.sliderObject).find('h2').attr('style', '');
+				  jQuery(args.currentSlideObject).children('h2').animate({
+					left: slideTitle,
+					opacity: '1'
+				  }, 400, 'easeOutQuint');
+			  }
+			  
+			  if(anotherLayout == false){
+				  jQuery(args.sliderObject).find('p').attr('style', '');
+				  jQuery(args.currentSlideObject).children('p').animate({
+					left: slideText,
+					opacity: '1'
+				  }, 600, 'easeOutQuint');
+			  }
+			  
+			  if(anotherLayout == false){
+				  jQuery(args.sliderObject).find('h3').attr('style', '');
+				  jQuery(args.currentSlideObject).children('h3').animate({
+					left: slideButton,
+					opacity: '1'
+				  }, 600, 'easeOutQuint');
+			  }
+			  
+			  if(anotherLayout == false){
+				  jQuery(args.sliderObject).find('img.slider-product-img').attr('style', '');
+				  jQuery(args.currentSlideObject).children('img.slider-product-img').animate({
+					right: slideProductImg,
+					opacity: '1'
+				  }, 600, 'easeOutQuint');
+			  }
+			  
+			  jQuery(args.sliderObject).find('img.slider-product-sky').attr('style', '');
+			  jQuery(args.currentSlideObject).children('img.slider-product-sky').animate({
+				top: slideSky,
+				opacity: '1'
+			  }, 600, 'easeOutQuint');
+			  
+			  jQuery(args.sliderObject).find('img.slider-product-footer').attr('style', '');
+			  jQuery(args.currentSlideObject).children('img.slider-product-footer').animate({
+				bottom: slideFooter,
+				opacity: '1'
+			  }, 1500, 'easeOutQuint');
+			  
+			  jQuery(args.sliderObject).find('div.slider-product-label').attr('style', '');
+			  if((jQuery(args.currentSlideObject).attr('id') != 'item_header_wide_slide_2') && (jQuery(args.currentSlideObject).attr('id') != 'item_header_wide_slide_3')){
+				  jQuery(args.currentSlideObject).children('div.slider-product-label').animate({
+					bottom: slideLabel,
+					opacity: '1'
+				  }, 1000, 'easeOutQuint');
+			  }
+			  
+			  /* item_header_wide_slide_2 or item_header_wide_slide_3 */
+			   if((jQuery(args.currentSlideObject).attr('id') == 'item_header_wide_slide_2') || (jQuery(args.currentSlideObject).attr('id') == 'item_header_wide_slide_3')){
+				  jQuery(args.currentSlideObject).children('div.slider-product-label').animate({
+					bottom: slideLabel_23,
+					opacity: '1'
+				  }, 1000, 'easeOutQuint');
+			   }
+			   
+			  /* another layout */
+			  if(anotherLayout == true){
+				  jQuery(args.sliderObject).find('h2').attr('style', '');
+				  jQuery(args.currentSlideObject).children('h2').animate({
+					right: slideTitle_anotherLayout,
+					opacity: '1'
+				  }, 400, 'easeOutQuint');
+				 
+				  jQuery(args.sliderObject).find('p').attr('style', '');
+				  jQuery(args.currentSlideObject).children('p').animate({
+					right: slideText_anotherLayout,
+					opacity: '1'
+				  }, 600, 'easeOutQuint');
+				
+				  jQuery(args.sliderObject).find('h3').attr('style', '');
+				  jQuery(args.currentSlideObject).children('h3').animate({
+					right: slideButton_anotherLayout,
+					opacity: '1'
+				  }, 600, 'easeOutQuint');
+				  
+				  jQuery(args.sliderObject).find('img.slider-product-img').attr('style', '');
+				  jQuery(args.currentSlideObject).children('img.slider-product-img').animate({
+					left: slideProductImg_anotherLayout,
+					opacity: '1'
+				  }, 600, 'easeOutQuint');
+			   }
+	}
+	function sliderLoaded(args) {
+		slideComplete(args);
+		slideChange(args);
+	}
+    
+  });
+</script>
+    <?php 
+  endif;
+endif;

@@ -1,0 +1,205 @@
+<?php
+/**
+ * Magento
+ *
+ * @category    design
+ * @package     meigeetheme_default
+ * @copyright   Copyright (c) 2012 MeigeeTeam. (http://www.meigeeteam.com)
+ */
+?>
+<?php 
+/*****/
+$appearance = MAGE::helper('ThemeOptions')->getThemeOptions('appearance');
+$toTop = Mage::getStoreConfig('meigee_general/otheroptions/totop');
+/*****/
+?>
+<?php echo MAGE::helper('ThemeOptions')->getThemeOptions('user-scalable'); ?>
+<meta http-equiv="Content-Type" content="<?php echo $this->getContentType() ?>" />
+<title><?php echo $this->getTitle() ?></title>
+<meta name="description" content="<?php echo htmlspecialchars($this->getDescription()) ?>" />
+<meta name="keywords" content="<?php echo htmlspecialchars($this->getKeywords()) ?>" />
+<meta name="robots" content="<?php echo htmlspecialchars($this->getRobots()) ?>" />
+<link rel="icon" href="<?php echo $this->getFaviconFile(); ?>" type="image/x-icon" />
+<link rel="shortcut icon" href="<?php echo $this->getFaviconFile(); ?>" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = '<?php echo $this->helper('core/js')->getJsUrl('blank.html') ?>';
+    var BLANK_IMG = '<?php echo $this->helper('core/js')->getJsUrl('spacer.gif') ?>';
+//]]>
+</script>
+<![endif]-->
+
+<!-- Font Replacement -->
+<?php if ($appearance['font'] == 2): ?>
+<link href='http://fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $appearance['gfont']); ?>:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+<?php endif; ?>
+<!-- End Font Replacement -->
+
+<?php echo $this->getCssJsHtml() ?>
+<?php echo $this->getChildHtml() ?>
+<?php echo $this->helper('core/js')->getTranslatorScript() ?>
+<?php echo $this->getIncludes() ?>
+
+<?php if ($toTop): ?>
+	<script type="text/javascript">
+		jQuery(window).load(function() {
+			if(!((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/Android/i)))){
+				jQuery().UItoTop({
+					text: "<?php echo $this->__('Top'); ?>"
+				});
+			}
+		});
+	</script>
+<?php endif; ?>
+
+<!-- Font Replacement -->
+<?php if ($appearance['font'] == 2): ?>
+<?php if ($appearance['default_sizes'] == 0): ?>
+<style>
+.product-view .product-options-bottom .price-box .price-as-configured .full-product-price .price,
+.tier-prices .price,
+.products-grid .price-box .old-price .price,
+.products-grid .price-box .special-price .price,
+.products-list button.btn-quick-view span span,
+.products-grid button.btn-quick-view span span,
+.product-view .product-prev,
+.product-view .product-next,
+header#header .nav-container > ul li li a span,
+#toTop,
+.header-slider-container .iosSlider .prev,
+.header-slider-container .iosSlider .next,
+.header-slider-container .iosSlider .slider .item div.slider-product-label,
+.header-slider-container .iosSlider .slider .item h2,
+.header-slider-container .iosSlider .slider .item h3 a,
+.home-banner-block h2,
+.home-banner-block a,
+.slider-container .prev,
+.slider-container .next,
+.slider-container .slider-text-box a,
+.slider-container .slider-text-box h2,
+.dashboard .box-info .box .box-title h3,
+.dashboard .box-title h2,
+.dashboard .box-head h2,
+.dashboard .welcome-msg p.hello,
+#checkout-step-login h3,
+.opc .step-title .number,
+.opc .step-title h2,
+.account-login .new-users h2,
+.account-login .registered-users h2,
+#cart-accordion h3.accordion-title,
+.cart .crosssell li.item .price-box .price,
+.cart .crosssell h2,
+.cart .totals .totals-title,
+.cart .discount h2,
+.cart .shipping h2,
+.cart-table .cart-price .price,
+.product-collateral h2,
+.catalog-product-view .box-reviews h2,
+.review-title h2,
+.block-related .product .product-details .price-box .price,
+.block-related .product-name a,
+.block-related header h2,
+.meigee-tabs a,
+.product-view .product-shop .price-box .price,
+.product-view .product-shop .product-name h2,
+.toolbar-bottom .pager .pages ol li a,
+.toolbar-bottom .pager .pages ol li.current span,
+.products-grid .price-box .price,
+.products-list .price-box .price,
+.toolbar .sorter .limiter label,
+.sorter .sort-by label,
+.sorter .view-mode .grid,
+.sorter .view-mode .list,
+.page-title h1,
+.page-title h2,
+aside.sidebar .actions a,
+aside.sidebar section header h2,
+#footer .block-subscribe h3,
+#footer .footer-main-block .footer-columns-block h3,
+#footer .footer-block .custom-footer-blocks h3,
+#footer .footer-block a.more,
+#nav > li > a,
+#nav ul li a,
+.product-name a,
+button.button span span,
+header#header .top-cart .block-title .title-cart,
+header#header .header-text-box,
+header#header .dropdown-links .dropdown-links-title,
+header#header .links li a.top-link-login{font-family: '<?php echo $appearance['gfont']; ?>', sans-serif; font-size:<?php echo $appearance['fontsize']; ?>px !important; line-height: <?php echo $appearance['fontsize']; ?>px !important; font-weight: <?php echo $appearance['fontweight']; ?> !important;}
+</style>
+<?php else: ?>
+<style>
+.product-view .product-options-bottom .price-box .price-as-configured .full-product-price .price,
+.tier-prices .price,
+.products-grid .price-box .old-price .price,
+.products-grid .price-box .special-price .price,
+.product-view .product-prev,
+.product-view .product-next,
+header#header .nav-container > ul li li a span,
+#toTop,
+.header-slider-container .iosSlider .prev,
+.header-slider-container .iosSlider .next,
+.header-slider-container .iosSlider .slider .item div.slider-product-label,
+.header-slider-container .iosSlider .slider .item h2,
+.header-slider-container .iosSlider .slider .item h3 a,
+.home-banner-block h2,
+.home-banner-block a,
+.slider-container .prev,
+.slider-container .next,
+.slider-container .slider-text-box a,
+.slider-container .slider-text-box h2,
+.dashboard .box-info .box .box-title h3,
+.dashboard .box-title h2,
+.dashboard .box-head h2,
+.dashboard .welcome-msg p.hello,
+#checkout-step-login h3,
+.opc .step-title .number,
+.opc .step-title h2,
+.account-login .new-users h2,
+.account-login .registered-users h2,
+#cart-accordion h3.accordion-title,
+.cart .crosssell li.item .price-box .price,
+.cart .crosssell h2,
+.cart .totals .totals-title,
+.cart .discount h2,
+.cart .shipping h2,
+.cart-table .cart-price .price,
+.product-collateral h2,
+.catalog-product-view .box-reviews h2,
+.review-title h2,
+.block-related .product .product-details .price-box .price,
+.block-related .product-name a,
+.block-related header h2,
+.meigee-tabs a,
+.product-view .product-shop .price-box .price,
+.product-view .product-shop .product-name h2,
+.toolbar-bottom .pager .pages ol li a,
+.toolbar-bottom .pager .pages ol li.current span,
+.products-grid .price-box .price,
+.products-list .price-box .price,
+.price-notice .price,
+.toolbar .sorter .limiter label,
+.sorter .sort-by label,
+.sorter .view-mode .grid,
+.sorter .view-mode .list,
+.page-title h1,
+.page-title h2,
+aside.sidebar .actions a,
+aside.sidebar section header h2,
+#footer .block-subscribe h3,
+#footer .footer-main-block .footer-columns-block h3,
+#footer .footer-block .custom-footer-blocks h3,
+#footer .footer-block a.more,
+#nav > li > a,
+#nav ul li a,
+.product-name a,
+button.button span span,
+header#header .top-cart .block-title .title-cart,
+header#header .header-text-box,
+header#header .dropdown-links .dropdown-links-title,
+header#header .links li a.top-link-login{font-family: '<?php echo $appearance['gfont']; ?>', sans-serif;}
+</style>
+<?php endif; ?>
+<?php endif; ?>
+<!-- End Font Replacement -->

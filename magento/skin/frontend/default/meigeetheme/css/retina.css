@@ -1,0 +1,245 @@
+/**
+ * Magento
+ *
+ * @category    design
+ * @package     meigeetheme_default
+ * @copyright   Copyright (c) 2012 MeigeeTeam. (http://www.meigeeteam.com)
+ */
+ 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+   only screen and (min-resolution: 144dpi){
+
+	/* Sprites Retina */
+	.messages .messages-close-btn,
+	header#header .menu-button,
+	.dashboard .box-info .box .box-title a,
+	aside.sidebar section.block-progress dt.complete a,
+	aside.sidebar section.block-progress dt .marker,
+	#login-form .form-list input,
+	.account-login .registered-users .form-list .input-box input.input-text,
+	.my-wishlist .link-edit,
+	.cart .shipping .form-list li:first-child select,
+	.product-view .product-shop .product-type-block .email-friend > span,
+	.product-view .product-options-bottom .email-friend > span,
+	.product-view .product-shop .product-box .availability,
+	.link-wishlist > span,
+	.link-compare > span,
+	#footer .footer-block ul li span.marker,
+	#nav ul > li.parent > a > span,
+	#nav > li.parent > a > span,
+	header#header .form-search button > span,
+	header#header .top-cart .block-title .cart-icon,
+	.sbSelector span.text,
+	header#header .links li a .link-marker,
+	header#header .dropdown-links .dropdown-links-title .link-marker,
+	.cart-table .link-wishlist,
+	.cart-table .cart-edit,
+	.btn-remove2,
+	.product-view .product-shop .product-bottom-box .email-friend,
+	.validation-advice,
+	a.fancybox,
+	.add-to-cart-success .btn-remove,
+	header#header .top-cart .btn-edit,
+	header#header .top-cart .btn-remove,
+	.btn-remove,
+	.block-layered-nav dl#layered_navigation_accordion dt .btn-nav,
+	#categories-accordion li.level-top.parent.closed .btn-cat,
+	#categories-accordion li.level-top.parent .btn-cat{
+		background-image:url(../images/@x2/system@x2.png);
+		background-repeat:no-repeat;
+		background-size:41px 1762px;
+	}
+	.dashboard .box-info .box .box-title a{background-position: 0 -1250px;}
+	aside.sidebar section.block-progress dt.complete a{background-position:0 -1250px;}
+	aside.sidebar section.block-progress dt .marker{background-position:0 -1300px;}
+	#login-form .form-list input{background-position:right -1745px;}
+	.account-login .registered-users .form-list .input-box input.input-text{background-position:right -1745px;}
+	.my-wishlist .link-edit{background-position: 6px -294px;}
+	.cart .shipping .form-list li:first-child select{background-position:right -1397px;}
+	.cart-table .btn-update > span{background:none; padding-left:0;}
+	.cart-table .btn-update span span{padding-left:20px;}
+	.product-view .product-options-bottom .email-friend > span,
+	.product-view .product-shop .product-type-block .email-friend > span{background-position:4px -545px;}
+	.product-view .product-shop .product-box .availability.in-stock{background-position:0 -941px;}
+	.product-view .product-shop .product-box .availability.out-of-stock{background-position:0 -990px;}
+	.link-wishlist > span{background-position:5px -695px;}
+	.link-compare > span{background-position:5px -596px;}
+	#footer .footer-block ul.tweets li span.marker{background-position:0 -1046px;}
+	#footer .footer-block ul li.address span.marker{background-position:0 -1096px;}
+	#footer .footer-block ul li.tel span.marker{background-position:0 -1146px;}
+	#footer .footer-block ul li.mail span.marker{background-position:0 -1196px;}
+	#nav ul > li.parent > a > span{background-position:right -742px;}
+	#nav > li.parent > a > span{background-position:right -1692px;}
+	#nav > li.parent.active > a > span{background-position:right -742px;}
+	.block-layered-nav dl#layered_navigation_accordion dt.closed .btn-nav{
+		background-position: 4px -42px;
+	}
+	#nav > li.parent.active.over  > a > span,
+	#nav > li.parent.over > a > span{
+		background-position:right -742px;
+	}
+	header#header .form-search button > span{background-position:6px -447px;}
+	header#header .top-cart .block-title .cart-icon{background-position:0 -900px;}
+	.sbSelector span.text{background-position:right -1646px;}
+	header#header .links li a .link-marker{background-position:0 -850px;}
+	header#header .dropdown-links .dropdown-links-title .link-marker{background-position:0 -1600px;}
+	.cart-table .link-wishlist{background-position:5px -344px;}
+	.cart-table .cart-edit{background-position:6px -294px;}
+	.btn-remove2{background-position:5px -396px;}
+	.product-view .product-shop .product-type-block .email-friend > span{background-position:4px -545px;}
+	.validation-advice{background-position:1px -248px;}
+	a.fancybox{background-position:4px -196px;}
+	.add-to-cart-success .btn-remove {background-position:0 -650px;}
+	header#header .top-cart .btn-edit{background-position:0 -150px;}
+	header#header .top-cart .btn-remove{background-position:0 -650px;}
+	.btn-remove{background-position:2px -498px;}
+	header#header .top-cart .btn-remove{background-position:0 -650px;}
+	#categories-accordion li.level-top.parent.closed .btn-cat,
+	#categories-accordion li.level-top.parent .btn-cat.closed{background-position:6px -40px;}
+	.messages .messages-close-btn{background-position:0 -650px;}
+	
+	
+	aside.sidebar section header .sidebar-marker,
+	.product-view .product-prev,
+	.product-view .product-next,
+	#footer .mobile-marker,
+	header#header .nav-container > ul .menu-item-button,
+	#toTop,
+	.cart .crosssell .next,
+	.cart .crosssell .prev,
+	.block-wishlist .prev,
+	.block-wishlist .next,
+	.more-views .prev,
+	.more-views .next,
+	.my-wishlist input.quantity-decrease,
+	.my-wishlist input.quantity-increase,
+	.add-to-cart input.quantity-decrease,
+	.add-to-cart input.quantity-increase,
+	.cart-table input.quantity-decrease,
+	.cart-table input.quantity-increase,
+	.block-related .prev,
+	.block-related .next,
+	.slider-container .prev,
+	.slider-container .next,
+	.header-slider-container .iosSlider .prev,
+	.header-slider-container .iosSlider .next{
+		background-image:url(../images/@x2/slider_arrows@x2.png);
+		background-repeat:no-repeat;
+		background-size:10px 160px;
+	}
+	.product-view .product-next{background-position:13px -40px;}
+	#toTop{background-position:15px -144px;}
+	.cart .crosssell .next{background-position:5px -43px;}
+	.block-wishlist .next{background-position:5px -43px;}
+	.more-views .next{background-position:6px -42px;}
+	.my-wishlist input.quantity-decrease,
+	.cart-table input.quantity-decrease,
+	.add-to-cart input.quantity-decrease{background-position:6px -85px;}
+	.my-wishlist input.quantity-increase,
+	.cart-table input.quantity-increase,
+	.add-to-cart input.quantity-increase{background-position:6px -135px;}
+	.block-related .next{background-position:5px -42px;}
+	.slider-container .next{background-position:12px -38px;}
+	.header-slider-container .iosSlider .next{background-position:12px -38px;}
+	
+	
+	ul.social-links li a{
+		background-image:url(../images/@x2/social_icons@x2.png);
+		background-repeat:no-repeat;
+		background-size:26px 211px;
+	}
+	ul.social-links li a.twitter{background-position:8px -44px;}
+	ul.social-links li a.rss{background-position:7px -193px;}
+	ul.social-links li a.googleplus{background-position:5px -94px;}
+	ul.social-links li a.linkedin{background-position:8px -142px;}
+	
+	
+	.pager .pages li a.i-previous,
+	.pager .pages li a.i-next,
+	.sorter .sort-by a,
+	.sorter .view-mode .grid,
+	.sorter .view-mode .list,
+	.toolbar-bottom .toolbar .pager .pages a.previous,
+	.toolbar-bottom .toolbar .pager .pages a.next{
+		background-image:url(../images/@x2/toolbar@x2.png);
+		background-repeat:no-repeat;
+		background-size:20px 409px;
+	}
+	.sorter .view-mode strong.grid,
+	.sorter .view-mode a.grid:hover {background-position:0 -96px;}
+	.sorter .view-mode .list{
+		background-position:0 -46px;
+	}
+	.sorter .view-mode strong.list,
+	.sorter .view-mode a.list:hover {background-position:0 -146px;}
+	.sorter .sort-by .asc{background-position:7px -344px;}
+	.sorter .sort-by .desc{background-position:7px -394px;}
+	.pager .pages li a.i-previous{background-position:3px -194px;}
+	.pager .pages li a.i-next{background-position:4px -244px;}
+	.toolbar-bottom .toolbar .pager .pages a.previous{background-position: 6px -191px!important;}
+	.toolbar-bottom .toolbar .pager .pages a.next{background-position: 6px -241px!important;}
+	
+	
+	.error-msg,
+	.success-msg,
+	.note-msg,
+	.notice-msg{
+		background-image:url(../images/@x2/alerts@x2.png);
+		background-repeat:no-repeat;
+		background-size:13px 111px;
+	}
+	.error-msg {background-position:18px -86px;}
+	.note-msg,
+	.notice-msg {background-position:18px -37px;}
+	
+	/* //Sprites Retina */
+	
+	
+	/* header#header h1.logo{width:235px; height:101px;} */
+	header#header h1.logo img{width: 50%;}
+	
+	
+	header#header .top-cart .block-content .mini-products-list .product-image{width:50px;}
+	header#header .top-cart .block-content{top:83px;}
+	
+	span.label-sale {
+		background: url("../images/@x2/on_sale@x2.png") no-repeat scroll 0 0 transparent;
+		background-size:176px 79px;
+	}
+	span.label-sale:hover{background-position:-99px 0;}
+	
+	span.label-new {
+		background: url("../images/@x2/label_new@x2.png") no-repeat scroll 0 0 transparent;
+		background-size:90px 43px;
+		width:42px;
+	}
+	span.label-new:hover{background-position:-48px 0;}
+	
+	.products-grid.small-grid span.label-new {
+		background: url("../images/@x2/label_new_small@x2.png") no-repeat scroll 0 0 transparent;
+		background-size:82px 33px;
+	}
+	.products-grid.small-grid span.label-new:hover{background-position:-50px 0;}
+	
+	.rating-box,
+	.rating-box .rating{background-size:15px 107px;}
+	.rating-box {background:url(../images/@x2/bkg_rating@x2.gif) 0 0 repeat-x; width:75px;}
+	.rating-box .rating{background:url(../images/@x2/bkg_rating@x2.gif) 0 100% repeat-x;}
+	
+	.meigee-tabs-content{margin-top:-1px;}
+	
+	.ratings-table .rating-box,
+	.ratings-table .rating-box .rating{background-size:9px 107px;}
+	.ratings-table .rating-box { width:43px; background:url(../images/@x2/bkg_rating_2@x2.gif) 0 0 repeat-x; }
+	.ratings-table .rating-box .rating{ background:url(../images/@x2/bkg_rating_2@x2.gif) 0 100% repeat-x; }
+	
+	.catalog-product-view .box-reviews .data-table thead th span{background-image:url(../images/@x2/review_stars@x2.png); background-size:35px 76px;}
+	.catalog-product-view .box-reviews .data-table thead th span.one-star{background-position:center 4px;}
+	.catalog-product-view .box-reviews .data-table thead th span.two-stars{background-position:center -11px;}
+	.catalog-product-view .box-reviews .data-table thead th span.three-stars{background-position:center -27px;}
+	.catalog-product-view .box-reviews .data-table thead th span.four-stars{background-position:center -43px;}
+	.catalog-product-view .box-reviews .data-table thead th span.five-stars{background-position:center -58px;}
+	
+	.fancybox-close{background-image:url(../images/@x2/quickview_close@x2.png)!important; background-size:14px 14px;}
+	
+}

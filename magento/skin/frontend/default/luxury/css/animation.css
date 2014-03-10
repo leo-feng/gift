@@ -1,0 +1,80 @@
+#search_mini_form .form-search button,
+.slider-container .jcarousel-list .btn-cart,
+.banner a span,
+.banner a em,
+.products-grid .btn-cart,
+.products-list .btn-cart,
+.product-image span,
+.product-image em,
+#zoom-prev,
+#zoom-next,
+.opc .step-title,
+.block .block-content li.item,
+.block-layered-nav dd li,
+#left-nav li,
+.product-tabs a,
+footer .footer-subscribe button.button span{
+transition: all 400ms ease-in-out;
+-webkit-transition: all 400ms ease-in-out;
+-moz-transition: all 400ms ease-in-out;
+-o-transition: all 400ms ease-in-out;
+}
+
+.banners a em {
+transition: background 400ms ease-in-out;
+-webkit-transition: background 400ms ease-in-out;
+-moz-transition: background 400ms ease-in-out;
+-o-transition: background 400ms ease-in-out;
+}
+a div {
+transition: border 400ms ease-in-out;
+-webkit-transition: border 400ms ease-in-out;
+-moz-transition: border 400ms ease-in-out;
+-o-transition: border 400ms ease-in-out;
+}
+
+#nav>li>a,
+#nav ul li a,
+button.button span{
+transition: background 200ms ease-in-out;
+-webkit-transition: background 200ms ease-in-out;
+-moz-transition: background 200ms ease-in-out;
+-o-transition: background 200ms ease-in-out;
+}
+
+footer .footer-top .footer-social a{
+transition: background 400ms ease-in-out;
+-webkit-transition: background 400ms ease-in-out;
+-moz-transition: background 400ms ease-in-out;
+-o-transition: background 400ms ease-in-out;
+}
+
+.add-to-cart button.button span,
+button.btn-proceed-checkout span{
+transition: all 400ms ease-in-out;
+-webkit-transition: all 400ms ease-in-out;
+-moz-transition: all 400ms ease-in-out;
+-o-transition: all 400ms ease-in-out;
+}
+
+.slideshow ul li a .slide-content span {
+transition: background-color 200ms ease-in-out;
+-webkit-transition: background-color 200ms ease-in-out;
+-moz-transition: background-color 200ms ease-in-out;
+-o-transition: background-color 200ms ease-in-out;
+}
+.jcarousel-next-horizontal, .jcarousel-prev-horizontal,
+.pager .pages li a.next, .pager .pages li a.previous
+{
+transition: background-color 200ms ease-in-out;
+-webkit-transition: background-color 200ms ease-in-out;
+-moz-transition: background-color 200ms ease-in-out;
+-o-transition: background-color 200ms ease-in-out;
+}
+
+#search_mini_form .form-search button{
+transition: background-color 200ms ease-in-out;
+-webkit-transition: background-color 200ms ease-in-out;
+-moz-transition: background-color 200ms ease-in-out;
+-o-transition: background-color 200ms ease-in-out;
+}

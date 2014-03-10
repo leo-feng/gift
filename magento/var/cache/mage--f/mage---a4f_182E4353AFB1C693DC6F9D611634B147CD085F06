@@ -1,0 +1,39 @@
+<!-- footer BOF -->
+<div class="footer-container">
+    <footer>
+	    <div class="footer-top">
+            <div class="footer-social"><h4>Connect with Us</h4>
+                <ul>
+                <li><a class="twitter" href="http://twitter.com/olegnax" target="social">Twitter</a></li>
+                <li><a class="facebook" href="http://facebook.com/olegnax" target="social">Facebook</a></li>
+                <li><a class="email" href="mailto:mail@olegnax.com">Email</a></li>
+                <li><a class="google" href="http://plus.google.com/u/0/111109476451145065018" target="social">Google</a></li>
+                </ul></div>
+            <div class="footer-subscribe">
+	<div class="left-border"></div>
+    <div class="title">Newsletter Sign Up</div>
+	<form action="http://gift.com/magento/index.php/newsletter/subscriber/new/?___SID=U" method="post" id="newsletter-validate-detail">
+        <div class="subscribe-input">
+	        <input type="text" name="email" id="newsletter" title="Your email" value="Your email" class="input-text required-entry validate-email" />
+        </div>
+        <button type="submit" title="订阅" class="button"><span><span>订阅</span></span></button>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    //]]>
+    </script>
+</div>
+        </div>
+        <ul class="links">
+                        <li><a href="http://gift.com/magento/index.php/?___SID=U" title="About Us">About Us</a></li>
+						<li class="separator">|</li>
+			            <li><a href="http://gift.com/magento/index.php/?___SID=U" title="Delivery & Returns">Delivery & Returns</a></li>
+						<li class="separator">|</li>
+			            <li><a href="http://gift.com/magento/index.php/?___SID=U" title="Terms & Conditions">Terms & Conditions</a></li>
+						<li class="separator">|</li>
+			            <li><a href="http://gift.com/magento/index.php/contacts/?___SID=U" title="Contact Us">Contact Us</a></li>
+			            </ul>	    <address>&copy; 2012 Luxury Theme. Made by <a href="//olegnax.com">olegnax.com</a></address>
+    </footer>
+</div>
+<!-- footer EOF -->

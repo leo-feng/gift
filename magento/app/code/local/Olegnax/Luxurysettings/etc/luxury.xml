@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<luxury>
+    <cms>
+        <pages>
+            <item>
+                <title>Luxury Home page</title>
+                <identifier>luxury_home</identifier>
+                <content><![CDATA[<div class="clearfix">{{block type="slideshow/slideshow" name="slideshow" template="olegnax/slideshow/slideshow.phtml" }}</div>
+                        <div class="banners clearfix"><a class="text-center" href="#"><img src="{{media url="olegnax/luxury/banner1.jpg"}}" alt="" width="300" height="164" /><span><span>everything you need<br />for a bright season<br /><em>shop now</em></span></span> </a> <a class="text-left" href="#"><img src="{{media url="olegnax/luxury/banner2.jpg"}}" alt="" width="300" height="164"  /><span><span>everything you need<br />for a bright season<br /><em>shop now</em></span></span></a> <a class="text-right" href="#"><img src="{{media url="olegnax/luxury/banner3.jpg"}}" alt="" width="300" height="164"  /><span><span>everything you need<br />for a bright season<br /><em>shop now</em></span></span> </a></div>]]></content>
+                <is_active>1</is_active>
+                <sort_order>0</sort_order>
+                <stores>
+                    <item>0</item>
+                </stores>
+                <root_template>one_column</root_template>
+            </item>
+            <item>
+                <title>Luxury No Route page</title>
+                <identifier>luxury_no_route</identifier>
+                <content><![CDATA[
+                    <div class="page-head-alt">
+                    <h3>Whoops, our bad...</h3>
+                    </div>
+                    <dl> <dt>The page you requested was not found, and we have a fine guess why.</dt> <dd>
+                    <ul class="disc">
+                    <li>If you typed the URL directly, please make sure the spelling is correct.</li>
+                    <li>If you clicked on a link to get here, the link is outdated.</li>
+                    </ul>
+                    </dd> </dl>
+                    <p>&nbsp;</p>
+                    <dl> <dt>What can you do?</dt> <dd>Have no fear, help is near! There are many ways you can get back on track with Magento Demo Store.</dd> <dd>
+                    <ul class="buttons">
+                    <li><button class="button" onclick="history.go(-1);"><span><span>Go back</span></span></button></li>
+                    <li><button class="button" onclick="{{store url=""}}"><span><span>Store Home</span></span></button></li>
+                    <li><button class="button" onclick="{{store url="customer/account"}}"><span><span>My Account</span></span></button></li>
+                    </ul>
+                    </dd></dl>]]></content>
+                <is_active>1</is_active>
+                <sort_order>0</sort_order>
+                <stores>
+                    <item>0</item>
+                </stores>
+                <root_template>one_column</root_template>
+            </item>
+        </pages>
+        <blocks>
+            <item>
+                <title>Luxury Call Us block</title>
+                <identifier>luxury_call_us</identifier>
+                <content><![CDATA[Call us +1 800 123 4567]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+            <item>
+                <title>Luxury Footer Connect block</title>
+                <identifier>luxury_footer_connect</identifier>
+                <content><![CDATA[<h4>Connect with Us</h4>
+                <ul>
+                <li><a class="twitter" href="http://twitter.com/olegnax" target="social">Twitter</a></li>
+                <li><a class="facebook" href="http://facebook.com/olegnax" target="social">Facebook</a></li>
+                <li><a class="email" href="mailto:mail@olegnax.com">Email</a></li>
+                <li><a class="google" href="http://plus.google.com/u/0/111109476451145065018" target="social">Google</a></li>
+                </ul>]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+            <item>
+                <title>Custom block</title>
+                <identifier>luxury_navigation_block</identifier>
+                <content><![CDATA[<p><strong>Lorem Ipsum</strong><span>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+            <item>
+                <title>Luxury Empty Category block</title>
+                <identifier>luxury_empty_category</identifier>
+                <content><![CDATA[<p>There are no products matching the selection.<br/> This is a static CMS block displayed if category is empty. You can put your own content here.</p>]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+            <item>
+                <title>Luxury Bottom Support block</title>
+                <identifier>luxury_bottom_support</identifier>
+                <content><![CDATA[<div class="site-block bottom"><a href="//help.olegnax.com/"><img src="{{media url="olegnax/luxury/live_support.png"}}" alt="Support link here. Can be edited from Admin" /></a></div>]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+	        <item>
+                <title>Luxury Store Logo</title>
+                <identifier>luxury_logo</identifier>
+                <content><![CDATA[<img src="{{media url="olegnax/luxury/logo.png"}}" alt="Luxury Store" />]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+            <item>
+                <title>Custom Tab</title>
+                <identifier>luxury_custom_tab</identifier>
+                <content><![CDATA[<p><strong>Lorem Ipsum</strong><span>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+            <item>
+                <title>Luxury Footer Links</title>
+                <identifier>luxury_footer_links</identifier>
+                <content><![CDATA[<ul class="links">
+                        <li><a href="{{store url=''}}" title="About Us">About Us</a></li>
+						<li class="separator">|</li>
+			            <li><a href="{{store url=''}}" title="Delivery & Returns">Delivery & Returns</a></li>
+						<li class="separator">|</li>
+			            <li><a href="{{store url=''}}" title="Terms & Conditions">Terms & Conditions</a></li>
+						<li class="separator">|</li>
+			            <li><a href="{{store url='contacts'}}" title="Contact Us">Contact Us</a></li>
+			            </ul>]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+        </blocks>
+    </cms>
+</luxury>

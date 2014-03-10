@@ -1,0 +1,10 @@
+<?php // Social Links
+$html = $this->getSocialLinks();
+echo '<ul class="social-links">';
+        if (!empty($html['twitter'])) echo '<li><a class="twitter" href="'.$html['twitter'].'"></a></li>';
+        if (!empty($html['rss'])) echo '<li><a class="rss" href="'.$html['rss'].'"></a></li>';
+        if (!empty($html['facebook'])) echo '<li><a class="facebook" href="'.$html['facebook'].'"></a></li>';
+        if (!empty($html['googleplus'])) echo '<li><a class="googleplus" href="'.$html['googleplus'].'"></a></li>';
+        if (!empty($html['linkedin'])) echo '<li><a class="linkedin" href="'.$html['linkedin'].'"></a></li>';
+echo '</ul>';
+?>

@@ -1,0 +1,345 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+		<olegnax translate="label" module="luxurysettings">
+			<label>Olegnax</label>
+			<sort_order>205</sort_order>
+		</olegnax>
+	</tabs>
+	<sections>
+		<luxurysettings translate="label" module="luxurysettings">
+			<label>Luxury Theme Settings</label>
+			<tab>olegnax</tab>
+			<sort_order>10</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<appearance translate="label">
+					<label>Appearance</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>10</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enable_font translate="label comment">
+							<label>Enable Google Font: </label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable_font>
+						<font translate="label comment">
+							<label>Font: </label>
+							<frontend_type>select</frontend_type>
+							<frontend_model>luxurysettings/adminhtml_system_config_form_field_font</frontend_model>
+							<source_model>luxurysettings/config_font</source_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</font>
+                        <color translate="label comment">
+                            <label>Theme Color: </label>
+                            <comment>This color will be used for buttons and backgrounds</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>luxurysettings/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </color>
+
+                        <bg_color translate="label comment">
+                            <label>Background Color: </label>
+                            <comment>This color will be used for background</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>luxurysettings/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bg_color>
+                        <bg_pattern translate="label comment">
+                            <label>Background Pattern: </label>
+                            <comment>This pattern will be used for background</comment>
+                            <frontend_type>select</frontend_type>
+	                        <frontend_model>luxurysettings/adminhtml_system_config_form_field_pattern</frontend_model>
+                            <source_model>luxurysettings/config_pattern</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bg_pattern>
+
+                        <toolbar_bg translate="label comment">
+                            <label>Toolbar Background Color: </label>
+                            <comment>This color will be used for toolbar background</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>luxurysettings/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </toolbar_bg>
+                        <toolbar_color translate="label comment">
+                            <label>Toolbar Color: </label>
+                            <comment>This color will be used for Toolbar text</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>luxurysettings/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </toolbar_color>
+
+                        <header_color translate="label comment">
+                            <label>Header/Footer Text Color: </label>
+                            <comment>This color will be used for Header/Footer text</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>luxurysettings/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </header_color>
+                        <header_bg translate="label comment">
+                            <label>Header/Footer Background Color: </label>
+                            <comment>This color will be used for Header/Footer Background</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>luxurysettings/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </header_bg>
+                        <header_border translate="label comment">
+                            <label>Header/Footer Border Color: </label>
+                            <comment>This color will be used for Header/Footer Border</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>luxurysettings/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </header_border>
+
+                        <bottom_text translate="label comment">
+                            <label>Bottom Text Color: </label>
+                            <comment>This color will be used for bottom text ( Copyright etc )</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>luxurysettings/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bottom_text>
+
+                        <menu_color translate="label comment">
+                            <label>Menu Text Color: </label>
+                            <comment>This color will be used for Menu Text</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>luxurysettings/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </menu_color>
+                        <menu_rollover translate="label comment">
+                            <label>Menu Text Rollover Color: </label>
+                            <comment>This color will be used for Menu Rollover Text</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>luxurysettings/adminhtml_system_config_form_field_color</frontend_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </menu_rollover>
+
+                        <content_bg_color translate="label comment">
+							<label>Content bg Color: </label>
+							<comment>This color will be used for content bg</comment>
+							<frontend_type>text</frontend_type>
+							<frontend_model>luxurysettings/adminhtml_system_config_form_field_color</frontend_model>
+							<sort_order>190</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</content_bg_color>
+					</fields>
+				</appearance>
+				<navigation translate="label">
+					<label>Navigation</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>30</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+                        <home translate="label">
+                            <label>Home Link in Navigation</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </home>
+						<show_description translate="label comment">
+							<label>Show Top Category description in dropdown: </label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</show_description>
+						<!--<columns_num translate="label comment">
+							<label>Columns Number: </label>
+							<comment>Will be used if top category has no description or show description option turned off</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</columns_num>-->
+						<show_learn_more translate="label comment">
+							<label><![CDATA[Show <b>"Learn more"</b> button under description:]]></label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</show_learn_more>
+					</fields>
+				</navigation>
+				<catalog translate="label">
+					<label>Catalog</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>40</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<categories_filter translate="label comment">
+							<label>Show Categories filter in layered navigation: </label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</categories_filter>
+					</fields>
+				</catalog>
+                <header translate="label">
+                    <label>Header</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <top_signup translate="label">
+                            <label>Show Sign Up Link</label>
+                            <comment>Link in the Top Links (top right corner).</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </top_signup>
+                        <top_custom_link translate="label">
+                            <label>Custom Link in Top links</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </top_custom_link>
+                        <top_custom_link_path translate="label">
+                            <label>Custom Link Path</label>
+                            <comment>No leading or trailing slashes.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </top_custom_link_path>
+                        <top_custom_link_anchor translate="label">
+                            <label>Custom Link Anchor Text</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </top_custom_link_anchor>
+                        <top_custom_link_title translate="label">
+                            <label>Custom Link Title Text</label>
+                            <comment>Additional text displayed on hover.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </top_custom_link_title>
+                    </fields>
+                </header>
+                <labels translate="label">
+                    <label>Product Labels</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <new_label translate="label">
+                            <label>Show "New" label</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </new_label>
+                        <new_label_position translate="label">
+                            <label>"New" label position</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>luxurysettings/config_position</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </new_label_position>
+                        <sale_label translate="label">
+                            <label>Show "Sale" label</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sale_label>
+                        <sale_label_position translate="label">
+                            <label>"Sale" label position</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>luxurysettings/config_position</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sale_label_position>
+                    </fields>
+                </labels>
+			</groups>
+		</luxurysettings>
+	</sections>
+</config>
+
+

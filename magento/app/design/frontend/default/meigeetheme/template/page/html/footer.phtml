@@ -1,0 +1,53 @@
+<?php
+/**
+ * Magento
+ *
+ * @category    design
+ * @package     meigeetheme_default
+ * @copyright   Copyright (c) 2012 MeigeeTeam. (http://www.meigeeteam.com)
+ */
+?>
+<footer id="footer">
+	<?php if ($static_html = $this->getChildHtml('custom_footer')): ?>
+	<div class="footer-block">
+		<div class="site-container">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="custom-footer-blocks">
+						<?php // Predefined Static Block
+							echo $static_html;
+						?>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<?php endif; ?>
+	<div class="footer-main-block">
+		<div class="site-container">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="footer-columns-block">
+						<?php // Predefined Static Block
+						if ($static_html = $this->getChildHtml('custom_footer_2')):
+							echo $static_html;
+						endif; ?>
+					</div>
+					<?php echo $this->getChildHtml('footer.newsletter') ?>
+					<div class="clear"></div>
+					<div class="footer-divider"></div>
+					<address><?php echo $this->getCopyright() ?></address>
+					<button onclick="" class="button footer-links-mob" type="button"><span><span><?php echo $this->__('Additional options'); ?></span></span></button>
+					<div class="footer-links-box">
+						<?php echo $this->getChildHtml('cms_footer_links') ?>
+						<?php echo $this->getChildHtml('footer_links') ?>
+					</div>
+					<div class="clear"></div>
+					<?php echo $this->getChildHtml('store_switcher') ?>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</footer>

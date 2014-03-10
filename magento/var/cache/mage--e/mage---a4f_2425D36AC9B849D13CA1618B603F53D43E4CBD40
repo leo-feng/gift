@@ -1,0 +1,331 @@
+
+<div class="nav-bar">
+<!-- menu start -->
+<ul id="nav">
+<li  class="  level0"> <a href="http://gift.com/magento/index.php/admin/dashboard/index/key/$dashboard/index$/"   class=""><span>仪表板</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>销售</span></a>
+<ul >
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/sales_order/index/key/$sales_order/index$/"   class=""><span>订单</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/sales_invoice/index/key/$sales_invoice/index$/"   class=""><span>发票</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/sales_shipment/index/key/$sales_shipment/index$/"   class=""><span>发货</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/sales_creditmemo/index/key/$sales_creditmemo/index$/"   class=""><span>信用记录</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/sales_transactions/index/key/$sales_transactions/index$/"   class=""><span>交易</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/sales_recurring_profile/index/key/$sales_recurring_profile/index$/"   class=""><span>循环配置文件（测试）</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/sales_billing_agreement/index/key/$sales_billing_agreement/index$/"   class=""><span>记账协议</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/checkout_agreement/index/key/$checkout_agreement/index$/"   class=""><span>条款和条件</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent last level1"> <a href="#"  onclick="return false" class=""><span>传真</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/tax_rule/index/key/$tax_rule/index$/"   class=""><span>管理税务规则</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/tax_rate/index/key/$tax_rate/index$/"   class=""><span>管理税务地区和税率</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/tax_rate/importExport/key/$tax_rate/importExport$/"   class=""><span>导入/导出税率</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/tax_class_customer/index/key/$tax_class_customer/index$/"   class=""><span>客户税率</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/tax_class_product/index/key/$tax_class_product/index$/"   class=""><span>产品税率</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>分类</span></a>
+<ul >
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/catalog_product/index/key/$catalog_product/index$/"   class=""><span>管理产品</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/catalog_category/index/key/$catalog_category/index$/"   class=""><span>管理分类</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>属性</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/catalog_product_attribute/index/key/$catalog_product_attribute/index$/"   class=""><span>管理属性</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/catalog_product_set/index/key/$catalog_product_set/index$/"   class=""><span>管理属性集</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/urlrewrite/index/key/$urlrewrite/index$/"   class=""><span>URL重写管理</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/catalog_search/index/key/$catalog_search/index$/"   class=""><span>搜索条件</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>评测与评级</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level2"> <a href="#"  onclick="return false" class=""><span>顾客评测</span></a>
+<ul >
+<li  class="  level3"> <a href="http://gift.com/magento/index.php/admin/catalog_product_review/pending/key/$catalog_product_review/pending$/"   class=""><span>挂起的评测</span></a>
+</li>
+<li  class="  last level3"> <a href="http://gift.com/magento/index.php/admin/catalog_product_review/index/key/$catalog_product_review/index$/"   class=""><span>所有评测</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/rating/index/key/$rating/index$/"   class=""><span>管理评级</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>标签</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/tag/index/key/$tag/index$/"   class=""><span>所有标签</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/tag/pending/key/$tag/pending$/"   class=""><span>挂起的标记</span></a>
+</li>
+</ul>
+</li>
+<li  class="  last level1"> <a href="http://gift.com/magento/index.php/admin/sitemap/index/key/$sitemap/index$/"   class=""><span>Google Sitemap</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>移动</span></a>
+<ul >
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/mobile/index/key/$mobile/index$/"   class=""><span>管理应用</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/mobile/history/key/$mobile/history$/"   class=""><span>提交历史</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/mobile/template/key/$mobile/template$/"   class=""><span>消息模板</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/mobile/queue/key/$mobile/queue$/"   class=""><span>消息队列</span></a>
+</li>
+<li  class="  last level1"> <a href="http://gift.com/magento/index.php/admin/admin_application/index/key/$admin_application/index$/"   class=""><span>Admin Application Settings</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>客户</span></a>
+<ul >
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/customer/index/key/$customer/index$/"   class=""><span>管理客户</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/customer_group/index/key/$customer_group/index$/"   class=""><span>客户组</span></a>
+</li>
+<li  class="  last level1"> <a href="http://gift.com/magento/index.php/admin/customer_online/index/key/$customer_online/index$/"   class=""><span>在线客户</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>促销</span></a>
+<ul >
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/promo_catalog/index/key/$promo_catalog/index$/"   class=""><span>分类价格规则</span></a>
+</li>
+<li  class="  last level1"> <a href="http://gift.com/magento/index.php/admin/promo_quote/index/key/$promo_quote/index$/"   class=""><span>购物车价格规则</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>新闻邮件</span></a>
+<ul >
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/newsletter_template/index/key/$newsletter_template/index$/"   class=""><span>新闻邮件模板</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/newsletter_queue/index/key/$newsletter_queue/index$/"   class=""><span>新闻邮件队列</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/newsletter_subscriber/index/key/$newsletter_subscriber/index$/"   class=""><span>新闻邮件订阅者</span></a>
+</li>
+<li  class="  last level1"> <a href="http://gift.com/magento/index.php/admin/newsletter_problem/index/key/$newsletter_problem/index$/"   class=""><span>新闻通讯问题报告</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>CMS</span></a>
+<ul >
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/cms_page/index/key/$cms_page/index$/"   class=""><span>页面</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/cms_block/index/key/$cms_block/index$/"   class=""><span>静态块</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/widget_instance/index/key/$widget_instance/index$/"   class=""><span>小工具</span></a>
+</li>
+<li  class="  last level1"> <a href="http://gift.com/magento/index.php/admin/poll/index/key/$poll/index$/"   class=""><span>投票</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>报告</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>销售</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_sales/sales/key/$report_sales/sales$/"   class=""><span>订单</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_sales/tax/key/$report_sales/tax$/"   class=""><span>传真</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_sales/invoiced/key/$report_sales/invoiced$/"   class=""><span>已出发票</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_sales/shipping/key/$report_sales/shipping$/"   class=""><span>运送</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_sales/refunded/key/$report_sales/refunded$/"   class=""><span>退款</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_sales/coupons/key/$report_sales/coupons$/"   class=""><span>折价券</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/paypal_reports/index/key/$paypal_reports/index$/"   class=""><span>PayPal处理报告</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>购物车</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_shopcart/product/key/$report_shopcart/product$/"   class=""><span>购物车中的产品</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/report_shopcart/abandoned/key/$report_shopcart/abandoned$/"   class=""><span>废弃的购物车</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>产品</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_sales/bestsellers/key/$report_sales/bestsellers$/"   class=""><span>最佳销量</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_product/sold/key/$report_product/sold$/"   class=""><span>产品已下单</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_product/viewed/key/$report_product/viewed$/"   class=""><span>最受欢迎</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_product/lowstock/key/$report_product/lowstock$/"   class=""><span>低库存</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/report_product/downloads/key/$report_product/downloads$/"   class=""><span>下载</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>客户</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_customer/accounts/key/$report_customer/accounts$/"   class=""><span>新帐户</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_customer/totals/key/$report_customer/totals$/"   class=""><span>按订单总数排列顾客</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/report_customer/orders/key/$report_customer/orders$/"   class=""><span>按订单数排列顾客</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>标签</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_tag/customer/key/$report_tag/customer$/"   class=""><span>客户</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_tag/product/key/$report_tag/product$/"   class=""><span>产品</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/report_tag/popular/key/$report_tag/popular$/"   class=""><span>流行</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>评测</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/report_review/customer/key/$report_review/customer$/"   class=""><span>客户评测</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/report_review/product/key/$report_review/product$/"   class=""><span>产品评论</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/report/search/key/$report/search$/"   class=""><span>搜索条件</span></a>
+</li>
+<li  class="  last level1"> <a href="http://gift.com/magento/index.php/admin/report_statistics/index/key/$report_statistics/index$/"   class=""><span>刷新状态</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class=" active  parent level0"> <a href="#"  onclick="return false" class="active"><span>系统</span></a>
+<ul >
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/system_account/index/key/$system_account/index$/"   class=""><span>我的帐户</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/notification/index/key/$notification/index$/"   class=""><span>通知</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>工具</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/system_backup/index/key/$system_backup/index$/"   class=""><span>备份</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/compiler_process/index/key/$compiler_process/index$/"   class=""><span>编译</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Web服务</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/api_user/index/key/$api_user/index$/"   class=""><span>SOAP/XML-RPC - Users</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/api_role/index/key/$api_role/index$/"   class=""><span>SOAP/XML-RPC - Roles</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/api2_role/index/key/$api2_role/index$/"   class=""><span>REST - Roles</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/api2_attribute/index/key/$api2_attribute/index$/"   class=""><span>REST - Attributes</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/oauth_consumer/index/key/$oauth_consumer/index$/"   class=""><span>REST - OAuth Consumers</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/oauth_authorizedTokens/index/key/$oauth_authorizedTokens/index$/"   class=""><span>REST - OAuth Authorized Tokens</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/oauth_admin_token/index/key/$oauth_admin_token/index$/"   class=""><span>REST - My Apps</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/system_design/index/key/$system_design/index$/"   class=""><span>设计</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>导入/导出</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/import/index/key/$import/index$/"   class=""><span>导入</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/export/index/key/$export/index$/"   class=""><span>导出</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/system_convert_gui/index/key/$system_convert_gui/index$/"   class=""><span>Dataflow - 配置文件</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/system_convert_profile/index/key/$system_convert_profile/index$/"   class=""><span>Dataflow - 高级配置文件</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="http://gift.com/magento/index.php/admin/system_currency/index/key/$system_currency/index$/"   class=""><span>管理货币</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/system_currency/index/key/$system_currency/index$/"   class=""><span>费率</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/system_currencysymbol/index/key/$system_currencysymbol/index$/"   class=""><span>符号</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/system_email_template/index/key/$system_email_template/index$/"   class=""><span>交易邮件</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/system_variable/index/key/$system_variable/index$/"   class=""><span>自定义变量</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>权限</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/permissions_user/index/key/$permissions_user/index$/"   class=""><span>用户</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/permissions_role/index/key/$permissions_role/index$/"   class=""><span>角色</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Magento内容</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/extension_local/index/key/$extension_local/index$/"   class=""><span>Magento连接管理器</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/extension_custom/index/key/$extension_custom/index$/"   class=""><span>包括扩展</span></a>
+</li>
+</ul>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/cache/index/key/$cache/index$/"   class=""><span>缓存管理</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/process/list/key/$process/list$/"   class=""><span>索引管理</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/system_store/index/key/$system_store/index$/"   class=""><span>管理店铺</span></a>
+</li>
+<li  class="  level1"> <a href="http://gift.com/magento/index.php/admin/sales_order_status/index/key/$sales_order_status/index$/"   class=""><span>订单状态</span></a>
+</li>
+<li  class="  last level1"> <a href="http://gift.com/magento/index.php/admin/system_config/index/key/$system_config/index$/"   class=""><span>配置</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#"  onclick="return false" class=""><span>Olegnax</span></a>
+<ul >
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#"  onclick="return false" class=""><span>Luxury</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/admin/system_config/edit/section/luxurysettings/key/$system_config/edit$/"   class=""><span>Theme Settings</span></a>
+</li>
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/luxurysettings/adminhtml_restore/index/key/$adminhtml_restore/index$/"   class=""><span>Restore Defaults</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/luxurysettings/adminhtml_activate/index/key/$adminhtml_activate/index$/"   class=""><span>Activate Theme</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent last level1"> <a href="#"  onclick="return false" class=""><span>Slideshow</span></a>
+<ul >
+<li  class="  level2"> <a href="http://gift.com/magento/index.php/slideshow/adminhtml_slideshow/index/key/$adminhtml_slideshow/index$/"   class=""><span>Manage Items</span></a>
+</li>
+<li  class="  last level2"> <a href="http://gift.com/magento/index.php/admin/system_config/edit/section/slideshow/key/$system_config/edit$/"   class=""><span>配置</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- menu end -->
+
+    <a id="page-help-link" href="http://www.magentocommerce.com/gethelp/zh_CN/Mage_Adminhtml/system_design/index/">获得有关本页面的帮助</a>
+    <script type="text/javascript">$('page-help-link').target = 'magento_page_help'</script>
+
+</div>

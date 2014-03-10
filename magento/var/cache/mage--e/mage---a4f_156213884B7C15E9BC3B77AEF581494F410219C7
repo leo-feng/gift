@@ -1,0 +1,17 @@
+<div class="footer-container">
+    <div class="footer">
+        <ul>
+<li><a href="http://gift.com/magento/index.php/about-magento-demo-store?___SID=U">About Us</a></li>
+<li><a href="http://gift.com/magento/index.php/customer-service?___SID=U">Customer Service</a></li>
+<li class="last privacy"><a href="http://gift.com/magento/index.php/privacy-policy-cookie-restriction-mode?___SID=U">Privacy Policy</a></li>
+</ul><ul class="links">
+                        <li class="first" ><a href="http://gift.com/magento/index.php/catalog/seo_sitemap/category/?___SID=U" title="站点结构图" >站点结构图</a></li>
+                                <li ><a href="http://gift.com/magento/index.php/catalogsearch/term/popular/?___SID=U" title="搜索条件" >搜索条件</a></li>
+                                <li ><a href="http://gift.com/magento/index.php/catalogsearch/advanced/?___SID=U" title="高级搜索" >高级搜索</a></li>
+                                <li ><a href="http://gift.com/magento/index.php/sales/guest/form/?___SID=U" title="订单与退货" >订单与退货</a></li>
+                                <li class=" last" ><a href="http://gift.com/magento/index.php/contacts/?___SID=U" title="联系我们" >联系我们</a></li>
+            </ul>
+        <p class="bugs">帮助我们保证Magento的健康 - <a href="http://www.magentocommerce.com/bug-tracking" onclick="this.target='_blank'"><strong>报告所有Bug</strong></a> （版本. 1.8.0.0）</p>
+        <address>&copy; 2012 Luxury Theme. Made by <a href="//olegnax.com">olegnax.com</a></address>
+    </div>
+</div>
